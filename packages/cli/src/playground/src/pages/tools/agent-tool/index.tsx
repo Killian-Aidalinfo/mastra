@@ -10,7 +10,15 @@ import { useAgent } from '@/hooks/use-agents';
 import { useExecuteTool } from '@/hooks/use-execute-agent-tool';
 
 import ToolExecutor from '../tool-executor';
-import { Header, Crumb, Breadcrumb, usePlaygroundStore, Txt } from '@mastra/playground-ui';
+import {
+  Header,
+  Crumb,
+  Breadcrumb,
+  usePlaygroundStore,
+  Txt,
+  MainContentLayout,
+  MainContentContent,
+} from '@mastra/playground-ui';
 
 const AgentTool = () => {
   const { toolId, agentId } = useParams();
@@ -42,7 +50,7 @@ const AgentTool = () => {
   const shouldShowEmpty = !agent || !tool;
 
   return (
-    <div className="grid h-full grid-rows-[auto_1fr]">
+    <MainContentLayout>
       <Header>
         <Breadcrumb>
           <Crumb as={Link} to={`/agents`}>
@@ -58,11 +66,11 @@ const AgentTool = () => {
       </Header>
 
       {isAgentLoading ? null : shouldShowEmpty ? (
-        <div className="py-12 text-center px-6">
+        <MainContentContent className="py-12 text-center px-6">
           <Txt variant="header-md" className="text-icon3">
             Agent or tool not found
           </Txt>
-        </div>
+        </MainContentContent>
       ) : (
         <ToolExecutor
           executionResult={result}
@@ -73,7 +81,7 @@ const AgentTool = () => {
           toolId={tool.id}
         />
       )}
-    </div>
+    </MainContentLayout>
   );
 };
 

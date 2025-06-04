@@ -23,6 +23,7 @@ import {
   Entity,
   EntityName,
   EntityIcon,
+  MainContentLayout,
 } from '@mastra/playground-ui';
 import clsx from 'clsx';
 import { useRef, useState } from 'react';
@@ -39,7 +40,7 @@ export const McpServerPage = () => {
   const httpStreamUrl = `${effectiveBaseUrl}/api/mcp/${serverId}/mcp`;
 
   return (
-    <>
+    <MainContentLayout>
       <Header>
         <Breadcrumb>
           <Crumb as={Link} to={`/mcps`}>
@@ -101,7 +102,7 @@ export const McpServerPage = () => {
           Server not found
         </Txt>
       )}
-    </>
+    </MainContentLayout>
   );
 };
 
