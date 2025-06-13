@@ -443,7 +443,7 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       zod:
-        specifier: ^3.25.56
+        specifier: ^3.25.57
         version: 3.25.57
     devDependencies:
       '@types/node':
@@ -1668,8 +1668,8 @@ importers:
         specifier: ^11.1.0
         version: 11.1.0
       zod-from-json-schema:
-        specifier: ^0.0.5
-        version: 0.0.5
+        specifier: ^0.4.2
+        version: 0.4.2
     devDependencies:
       '@ai-sdk/anthropic':
         specifier: ^1.2.12
@@ -1869,7 +1869,7 @@ importers:
         specifier: ^16.5.0
         version: 16.5.0
       zod:
-        specifier: ^3.25.56
+        specifier: ^3.25.57
         version: 3.25.57
     devDependencies:
       '@mastra/core':
@@ -2324,8 +2324,8 @@ importers:
         specifier: ^0.4.0
         version: 0.4.0
       zod-from-json-schema:
-        specifier: ^0.0.5
-        version: 0.0.5
+        specifier: ^0.4.2
+        version: 0.4.2
       zod-to-json-schema:
         specifier: ^3.24.5
         version: 3.24.5(zod@3.25.57)
@@ -18024,8 +18024,8 @@ packages:
   zimmerframe@1.1.2:
     resolution: {integrity: sha512-rAbqEGa8ovJy4pyBxZM70hg4pE6gDgaQ0Sl9M3enG3I0d6H4XSAM3GeNGLKnsBpuijUow064sf7ww1nutC5/3w==}
 
-  zod-from-json-schema@0.0.5:
-    resolution: {integrity: sha512-zYEoo86M1qpA1Pq6329oSyHLS785z/mTwfr9V1Xf/ZLhuuBGaMlDGu/pDVGVUe4H4oa1EFgWZT53DP0U3oT9CQ==}
+  zod-from-json-schema@0.4.2:
+    resolution: {integrity: sha512-U+SIzUUT7P6w1UNAz81Sj0Vko77eQPkZ8LbJeXqQbwLmq1MZlrjB3Gj4LuebqJW25/CzS9WA8SjTgR5lvuv+zA==}
 
   zod-to-json-schema@3.24.5:
     resolution: {integrity: sha512-/AuWwMP+YqiPbsJx5D6TfgRTc4kTLjsh5SOcd4bLsfUg2RcEXrFMJl1DGgdHy2aCfsIA/cr/1JM0xcB2GZji8g==}
@@ -35585,7 +35585,7 @@ snapshots:
 
   zimmerframe@1.1.2: {}
 
-  zod-from-json-schema@0.0.5:
+  zod-from-json-schema@0.4.2:
     dependencies:
       zod: 3.25.57
 
